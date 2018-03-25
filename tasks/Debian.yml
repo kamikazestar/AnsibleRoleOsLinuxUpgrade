@@ -7,4 +7,4 @@
 
 - name: Remove unused or unnecessary files
   apt:
-    autoreomve: yes
+    autoremove: yes
