@@ -2,6 +2,6 @@
 # tasks file for AnsibleRoleOsLinuxUpgrade
 # Include OS specyfic tasks
 - include: Debian.yml
-when: ansible_os_family == "Debian"
+  when: ansible_os_family == "Debian"
 - include: RedHat.yml
-when: ansible_os_family == "RedHat"
+  when: ansible_os_family == "RedHat"
