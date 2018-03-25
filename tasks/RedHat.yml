@@ -1,0 +1,6 @@
+---
+# tasks file for AnsibleRoleOsLinuxUpgrade specyfic for RedHat based OS
+name: Upgrade RedHat based operating system
+yum:
+  name: '*'
+  state: latest

@@ -1,0 +1,10 @@
+---
+# tasks file for AnsibleRoleOsLinuxUpgrade specyfic for Debian based OS
+name: Upgrade all packages
+apt:
+  name: '*'
+  state: latest
+
+name: Remove unused or unnecessary files
+apt:
+  autoreomve: yes
