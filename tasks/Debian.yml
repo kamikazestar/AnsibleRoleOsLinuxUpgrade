@@ -2,8 +2,9 @@
 # tasks file for AnsibleRoleOsLinuxUpgrade specyfic for Debian based OS
 - name: Upgrade all packages
   apt:
-    name: '*'
-    state: latest
+    upgrade: dist
+    cache_update: yes
+    cache_valid_time: 3600
 
 - name: Remove unused or unnecessary files
   apt:

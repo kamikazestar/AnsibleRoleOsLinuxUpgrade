@@ -1,8 +1,7 @@
 galaxy_info:
   author: Marcin Slabonski
   description: >-
-    This role will upgrade all Apt or Yum packages to newest available version.
-    In case of Debian based operating system role will also remove all unused or unnecessary files.
+    This role will upgrade all Apt or Yum packages to newest available version. In case of Debian based operating systems, sole is using apt dist-upgrade which means that it will upgrade currently installed packages and can remove some packages to resolve new dependencies. Role will also remove all unused or unnecessary files in case of Debian operating systems.
   company: None
 
   # If the issue tracker for your role is not on github, uncomment the
